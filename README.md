@@ -20,7 +20,7 @@ almost simultaneously, the instance manager may start **two containers or more**
 
 ## Steps to Reproduce
 1. Run `docker stats` to observe two running containers for the same instance ID.
-2. Open the client web app served by PocketHost.
+2. Open the client web app.
 3. Immediately after page load, the frontend triggers:
    - An HTTP request to the PocketBase API (e.g., `GET /api/collections/xyz/records`)
    - A `realtime.subscribe()` call on the same collection.
